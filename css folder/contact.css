@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.navbar-brand {
+    color: rgba(255, 192, 167, 0.932);
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.navbar-brand:hover {
+    text-shadow: -3px 3px red;
+    /*to give gradient on hover on text*/
+}
+
+.contact-section {
+    background: url("C:/Users/daksh/Desktop/Projects/mini project/Find-2-Eat/Images/contactus.webp");
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #ddd;
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: white;
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 4px rgba(255, 0, 0, 0.932);
+    ;
+}
+
+textarea.contact-form-text {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.contact-form-btn:hover {
+    background: #ff0000;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(230, 165, 140);
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #a05234;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}

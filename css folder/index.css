@@ -1,0 +1,97 @@
+@import url(
+  'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4e2804;
+}
+
+.vocalforlocal {
+  position: absolute;
+  top: 30px;
+  align-self: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(230, 165, 140);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #a05234;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.navbar-brand {
+  color: rgba(255, 192, 167, 0.932);
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.navbar-brand:hover {
+  text-shadow: -3px 3px red;
+  /*to give gradient on
+   hover on text*/
+}
+
+/* for sliding effect */
+.maindiv{
+  width: 70%;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform:translate(-50%, -50%);
+  background-size: 100% 100%;
+  box-shadow: 1px 2px 10px 5px goldenrod;
+  /* box-shadow gives border: horizontal offset, vertical offset, blur, spread blur */
+  animation: slider 15s infinite linear;
+  /* name of animation, duration, infinite times, move in line */
+}
+
+/* now lets define slider */
+@keyframes slider{
+  0%{background-image: url("C:/Users/daksh/Desktop/Projects/mini project/Find-2-Eat/Images/smiley.png");}
+  19%{background-image: url("C:/Users/daksh/Desktop/Projects/mini project/Find-2-Eat/Images/raasta.jpg");}
+  38%{background-image: url("C:/Users/daksh/Desktop/Projects/mini project/Find-2-Eat/Images/d11.jpg");}
+  57%{background-image: url("C:/Users/daksh/Desktop/Projects/mini project/Find-2-Eat/Images/kingdomofmomos.jpg");} 
+  76%{background-image: url("C:/Users/daksh/Desktop/Projects/mini project/Find-2-Eat/Images/guptaburger.jpg");}
+  100%{background-image: url("C:/Users/daksh/Desktop/Projects/mini project/Find-2-Eat/Images/kulchaland.jpg");}
+/* % denotes the percentage of total time given to image */
+}
